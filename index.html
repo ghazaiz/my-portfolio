@@ -7,7 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Quicksand:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -25,10 +24,14 @@
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-video-wrap">
-    <video autoplay muted loop playsinline
-      poster="https://images.pexels.com/videos/3816531/agriculture-blue-british-columbia-canada-3816531.jpeg">
-      <source src="https://videos.pexels.com/video-files/3816531/3816531-uhd_2560_1440_30fps.mp4" type="video/mp4">
-    </video>
+    <video
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto">
+    <source src="Tulipss.mp4" type="video/mp4">
+</video>
   </div>
 
   <div class="hero-inner">
@@ -37,11 +40,16 @@
         <div class="eyebrow">Software Engineering Student · Lahore, PK</div>
         <h1>Ghazaiz<br>Nadeem</h1>
         <p class="hero-tagline">
+          <b>
           BSSE '28 at Lahore College for Women University, building with
           <strong>Python</strong> and <strong>C++</strong>, learning front-end
           development, and growing as an <strong>SEO &amp; digital marketing</strong>
           enthusiast — thinking both technically and strategically.
+        </b>
         </p>
+        <div class="typewriter">
+          <span>Let's build in&nbsp;</span><span id="tw-text"></span><span class="tw-cursor">|</span>
+        </div>
         <div class="hero-cta">
           <a href="#experience" class="btn btn-solid">View Achievements</a>
           <a href="#contact" class="btn btn-ghost" id="copy-email">Copy Email</a>
@@ -49,17 +57,21 @@
       </div>
 
       <div class="photo-stage">
-        <div class="photo-frame">
-          <div class="blob"></div>
-          <div class="ring"></div>
-          <img src="profile.jpg" alt="Ghazaiz Nadeem">
+        <div class="photo-ring-wrap">
+        
+          <div class="photo-frame">
+            <div class="blob"></div>
+            <div class="ring"></div>
+            <img src="profile.jpg" alt="Ghazaiz Nadeem">
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </section>
 
-<!-- ACHIEVEMENTS -->
+<!-- ACHIEVEMENTS AT A GLANCE -->
 <div class="stats">
   <div class="stat-card"><div class="num">2</div><div class="label">Projects Shipped</div></div>
   <div class="stat-card"><div class="num">4</div><div class="label">Certifications</div></div>
@@ -79,12 +91,52 @@
       research, on-page optimization, and content strategy — which lets me
       approach problems both as an engineer and a strategist.
     </p>
-    <div class="fact-card">
-      <div class="row"><span>Location</span><span>Lahore, Punjab, PK</span></div>
-      <div class="row"><span>Degree</span><span>BSSE, LCWU</span></div>
-      <div class="row"><span>Grad. Year</span><span>2028</span></div>
-      <div class="row"><span>Focus</span><span>SWE + SEO</span></div>
-      <div class="row"><span>Email</span><span>ghazaiznadeem00@gmail.com</span></div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-heading">My journey so far</div>
+    <div class="journey-stage">
+      <svg class="journey-svg" viewBox="0 0 100 620" preserveAspectRatio="none">
+        <path class="journey-path js-animate" d="M50,10 C10,90 90,150 50,230 C10,310 90,370 50,450 C15,520 85,540 50,610" />
+      </svg>
+
+      <div class="milestone-list">
+        <div class="milestone-row side-left">
+          <div class="m-card">
+            <div class="m-title">BSSE '28</div>
+            <p class="m-desc">Started my Software Engineering journey at Lahore College for Women University.</p>
+          </div>
+          <div class="m-node">
+            <span class="m-node-index">1</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <div class="m-spacer"></div>
+        </div>
+
+        <div class="milestone-row side-right">
+          <div class="m-card">
+            <div class="m-title">Python &amp; C++</div>
+            <p class="m-desc">Built strong programming fundamentals through coursework and personal projects.</p>
+          </div>
+          <div class="m-node">
+            <span class="m-node-index">2</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="m-spacer"></div>
+        </div>
+
+        <div class="milestone-row side-left">
+          <div class="m-card">
+            <div class="m-title">SEO &amp; Digital Marketing</div>
+            <p class="m-desc">Expanded into SEO and Digital Marketing while continuing my Software Engineering journey.</p>
+          </div>
+          <div class="m-node">
+            <span class="m-node-index">3</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8"/><path d="M20 5a9 9 0 0 1 0 14"/></svg>
+          </div>
+          <div class="m-spacer"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -92,7 +144,27 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="eyebrow">Skills</div>
-  <h2 style="margin-bottom:2.4rem; font-size:clamp(1.7rem,3vw,2.3rem);">What I work with</h2>
+  <h2 style="margin-bottom:2rem; font-size:clamp(1.7rem,3vw,2.3rem);">What I work with</h2>
+
+  <div class="skill-fan" aria-hidden="true">
+    <div class="fan-card fc1">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      Python
+    </div>
+    <div class="fan-card fc2">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      C++
+    </div>
+    <div class="fan-card fc3">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      SEO
+    </div>
+    <div class="fan-card fc4">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      Front-End
+    </div>
+    <div class="fan-photo"><img src="profile.jpg" alt=""></div>
+  </div>
 
   <div class="skills-grid">
     <div class="skill-card">
@@ -137,7 +209,7 @@
 
   <div class="exp-list">
     <div class="exp-row">
-      <div class="exp-logo" style="background:var(--sage-deep);">AF</div>
+      <div class="exp-logo" style="background:var(--violet-mid);" title="Milestone: stepped into community leadership">AF</div>
       <div>
         <div class="exp-role">Community Volunteer</div>
         <div class="exp-org">Alkhidmat Foundation Pakistan<span class="dot">·</span><span class="type">Internship</span></div>
@@ -151,7 +223,7 @@
     </div>
 
     <div class="exp-row">
-      <div class="exp-logo" style="background:var(--lilac-deep);">FL</div>
+      <div class="exp-logo" style="background:var(--lilac-deep);" title="Milestone: first client-facing role">FL</div>
       <div>
         <div class="exp-role">Sales Associate</div>
         <div class="exp-org">Freelance | Self-Employed<span class="dot">·</span><span class="type">Freelance</span></div>
@@ -165,7 +237,7 @@
     </div>
 
     <div class="exp-row">
-      <div class="exp-logo" style="background:var(--rose-deep);">NT</div>
+      <div class="exp-logo" style="background:var(--rose-deep);" title="Milestone: first hands-on front-end role">NT</div>
       <div>
         <div class="exp-role">Frontend Developer</div>
         <div class="exp-org">NexaSecure Tech<span class="dot">·</span><span class="type">Internship</span></div>
@@ -175,6 +247,31 @@
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41 11 3.83 3.83 11l9.58 9.58a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.82z"/><circle cx="8" cy="8" r="1.5"/></svg>
           <span><b>Skills:</b> Front-End Design, HTML, CSS, JavaScript</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS — intentionally quiet, low visual weight -->
+<section id="projects" class="projects-quiet">
+  <div class="eyebrow">Projects</div>
+  <h2>A couple of things I've built on the side</h2>
+
+  <div class="project-portal">
+    <div class="portal-bar">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="url">ghazaiz/projects</span>
+    </div>
+    <div class="portal-body">
+      <div class="proj-line">
+        <span class="name">Catch the Cake Game</span>
+        <span class="desc">Tkinter game in Python — move a basket to catch falling cakes.</span>
+        <a class="link" href="https://github.com/ghazaiz/Catch-the-cake-game" target="_blank" rel="noopener">github ↗</a>
+      </div>
+      <div class="proj-line">
+        <span class="name">Student Record Management System</span>
+        <span class="desc">C++ console app for managing student records with file handling.</span>
+        <a class="link" href="https://github.com/ghazaiz/Student-Record-Management-System-" target="_blank" rel="noopener">github ↗</a>
       </div>
     </div>
   </div>
@@ -202,23 +299,6 @@
   </div>
 </section>
 
-<!-- PROJECTS — intentionally quiet, low visual weight -->
-<section id="projects" class="projects-quiet">
-  <div class="eyebrow">Projects</div>
-  <h2>A couple of things I've built on the side</h2>
-
-  <div class="proj-line">
-    <span class="name">Catch the Cake Game</span>
-    <span class="desc">Tkinter game in Python — move a basket to catch falling cakes.</span>
-    <a class="link" href="https://github.com/ghazaiz/Catch-the-cake-game" target="_blank" rel="noopener">github ↗</a>
-  </div>
-  <div class="proj-line">
-    <span class="name">Student Record Management System</span>
-    <span class="desc">C++ console app for managing student records with file handling.</span>
-    <a class="link" href="https://github.com/ghazaiz/Student-Record-Management-System-" target="_blank" rel="noopener">github ↗</a>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="eyebrow" style="justify-content:center;">Contact</div>
@@ -230,13 +310,7 @@
   </div>
 </section>
 
-<footer>
-  © 2026 Ghazaiz Nadeem
-</footer>
-
 <div id="toast">Email copied to clipboard</div>
-
 <script src="script.js"></script>
-
 </body>
 </html>
