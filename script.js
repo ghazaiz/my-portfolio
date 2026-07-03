@@ -53,19 +53,19 @@ const sections = document.querySelectorAll('section[id]');
     twEl.textContent = twWords[0];
   }
 
-  // ---- journey map: reveal milestones + draw path on scroll ----
+  // ---- reveal-on-scroll for focus cards ----
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const journeyTargets = document.querySelectorAll('.milestone-row, .journey-path.js-animate');
-  if ('IntersectionObserver' in window && !reduceMotion) {
-    const journeyObserver = new IntersectionObserver((entries) => {
+  const focusCards = document.querySelectorAll('.focus-card');
+  if ('IntersectionObserver' in window && !reduceMotion && focusCards.length) {
+    focusCards.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(18px)'; el.style.transition = 'opacity .5s ease, transform .5s ease'; });
+    const focusObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          journeyObserver.unobserve(entry.target);
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          focusObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.3, rootMargin: '0px 0px -60px 0px' });
-    journeyTargets.forEach(el => journeyObserver.observe(el));
-  } else {
-    journeyTargets.forEach(el => el.classList.add('in-view'));
+    }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+    focusCards.forEach((el, i) => { setTimeout(() => focusObserver.observe(el), 0); });
   }
