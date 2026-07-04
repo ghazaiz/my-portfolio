@@ -11,13 +11,22 @@
 <body>
 
 <nav>
-  <div class="logo">Ghazaiz<span>.</span></div>
+  <div class="logo">Portfolio<span>.</span></div>
   <div class="nav-links">
     <a href="#about">ABOUT</a>
-    <a href="#skills">SKILLS</a>
+    <a href="#skills">SKILLS &amp; PROJECTS</a>
     <a href="#experience">EXPERIENCE</a>
-    <a href="#projects">PROJECTS</a>
     <a href="#contact">CONTACT</a>
+  </div>
+  <div class="social-links" aria-label="Social links">
+    <a href="https://www.linkedin.com/in/ghazaiznadeem-305bb4363" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v2"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      <span class="social-label">LinkedIn</span>
+    </a>
+    <a href="https://github.com/ghazaiz" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.87c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 19V22"/></svg>
+      <span class="social-label">GitHub</span>
+    </a>
   </div>
 </nav>
 
@@ -58,7 +67,7 @@
 
       <div class="photo-stage">
         <div class="photo-ring-wrap">
-        
+
           <div class="photo-frame">
             <div class="blob"></div>
             <div class="ring"></div>
@@ -71,49 +80,26 @@
 
 </section>
 
-<!-- ACHIEVEMENTS AT A GLANCE -->
-<div class="stats">
-  <div class="stat-card"><div class="num">2</div><div class="label">Projects Shipped</div></div>
-  <div class="stat-card"><div class="num">4</div><div class="label">Certifications</div></div>
-  <div class="stat-card"><div class="num">3</div><div class="label">Roles Held</div></div>
-  <div class="stat-card"><div class="num">2028</div><div class="label">Graduating</div></div>
-</div>
-
 <!-- ABOUT -->
 <section id="about">
   <div class="eyebrow">About</div>
-  <div class="about-grid">
-    <p>
-      Hi! I'm a 19-year-old BS Software Engineering student at Lahore College
-      for Women University with a growing foundation in Python and C++, and
-      I'm eagerly picking up front-end development. Alongside the technical
-      side, I'm building skills in SEO and digital marketing — keyword
-      research, on-page optimization, and content strategy — which lets me
-      approach problems both as an engineer and a strategist.
-    </p>
-  </div>
+  <div class="about-layout">
+    <div class="about-grid">
+      <p>
+        Hi! I'm a 19-year-old BS Software Engineering student at Lahore College
+        for Women University with a growing foundation in Python and C++, and
+        I'm eagerly picking up front-end development. Alongside the technical
+        side, I'm building skills in SEO and digital marketing — keyword
+        research, on-page optimization, and content strategy — which lets me
+        approach problems both as an engineer and a strategist.
+      </p>
+    </div>
 
-  <div class="focus-ribbon">
-    <div class="focus-card focus-eng">
-      <div class="focus-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-      </div>
-      <div class="focus-label">Engineering</div>
-      <p>Python &amp; C++ fundamentals, now stretching into front-end.</p>
-    </div>
-    <div class="focus-card focus-mkt">
-      <div class="focus-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      </div>
-      <div class="focus-label">Marketing &amp; SEO</div>
-      <p>Keyword research, on-page optimization, content strategy.</p>
-    </div>
-    <div class="focus-card focus-people">
-      <div class="focus-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41 11 3.83 3.83 11l9.58 9.58a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.82z"/><circle cx="8" cy="8" r="1.5"/></svg>
-      </div>
-      <div class="focus-label">Community</div>
-      <p>Leadership &amp; service work alongside the technical track.</p>
+    <div class="stats about-stats">
+      <div class="stat-card"><div class="num">2</div><div class="label">Projects Shipped</div></div>
+      <div class="stat-card"><div class="num">4</div><div class="label">Certifications</div></div>
+      <div class="stat-card"><div class="num">3</div><div class="label">Roles Held</div></div>
+      <div class="stat-card"><div class="num">2028</div><div class="label">Graduating</div></div>
     </div>
   </div>
 </section>
@@ -121,68 +107,58 @@
 <!-- SKILLS -->
 <section id="skills">
   <div class="eyebrow">Skills</div>
-  <h2 style="margin-bottom:2rem; font-size:clamp(1.7rem,3vw,2.3rem);">What I work with</h2>
+  <h2>Skills &amp; Projects</h2>
+  <p class="section-intro">Hover a card to see the project behind it — the Front-End one opens a working live demo.</p>
 
-  <div class="skill-fan" aria-hidden="true">
-    <div class="fan-card fc1">
+  <div class="skill-fan">
+    <div class="fan-card fc1" tabindex="0" data-shift="right">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-      Python
+      <div class="fan-title">Python</div>
+      <div class="fan-detail">
+        <div class="fan-project">Catch the Cake Game</div>
+        <p>Tools: Python, Tkinter, event loops. Built to catch falling cakes with basket movement, scoring, and clean timing.</p>
+      </div>
     </div>
-    <div class="fan-card fc2">
+    <div class="fan-card fc2" tabindex="0" data-shift="left">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-      C++
+      <div class="fan-title">C++</div>
+      <div class="fan-detail">
+        <div class="fan-project">Student Record Management System</div>
+        <p>Tools: C++, file handling, STL basics. Built for record add, edit, search, and storage workflows.</p>
+      </div>
     </div>
-    <div class="fan-card fc3">
+    <div class="fan-card fc3" tabindex="0" data-shift="right">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      SEO
+      <div class="fan-title">SEO</div>
+      <div class="fan-detail">
+        <div class="fan-project">SearchSprint Audit</div>
+        <p>Tools: keyword research, meta tags, page headings, analytics review. Optimized content and structure for search visibility.</p>
+      </div>
     </div>
-    <div class="fan-card fc4">
+    <div class="fan-card fc4 fc-demo" tabindex="0" data-shift="left">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-      Front-End
+      <div class="fan-title">Front-End</div>
+      <div class="fan-detail fan-detail-demo">
+        <div class="fan-project" id="demo-project-title">Profile Card — Live Demo</div>
+        <p id="demo-project-desc">Built from scratch with HTML &amp; CSS. Hover keeps this preview open — these are the actual projects running, not screenshots.</p>
+        <div class="demo-tabs" role="tablist" aria-label="Front-end demo projects">
+          <button type="button" class="demo-tab is-active" data-demo="profilecard" role="tab" aria-selected="true">Profile Card</button>
+          <button type="button" class="demo-tab" data-demo="loginpage" role="tab" aria-selected="false">Login Page</button>
+        </div>
+        <div class="demo-frame-wrap">
+          <iframe id="demo-profilecard" class="demo-frame is-active" title="Profile Card live demo" loading="lazy"></iframe>
+          <iframe id="demo-loginpage" class="demo-frame" title="Login Page live demo" loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
     <div class="fan-photo"><img src="profile.jpg" alt=""></div>
-  </div>
-
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Technical</h3>
-      <div class="chip-row">
-        <span class="chip">Python</span>
-        <span class="chip">C++</span>
-        <span class="chip">Front-End Development</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <h3>Marketing &amp; Growth</h3>
-      <div class="chip-row">
-        <span class="chip">SEO</span>
-        <span class="chip">Digital Marketing</span>
-        <span class="chip">CRM</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <h3>People &amp; Service</h3>
-      <div class="chip-row">
-        <span class="chip">Customer Support</span>
-        <span class="chip">Social Services</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <h3>Certifications</h3>
-      <div class="chip-row cert-row" style="margin-top:0;">
-        <span class="chip">SEO</span>
-        <span class="chip">Basics of Digital Marketing</span>
-        <span class="chip">Deloitte Australia — Job Simulation</span>
-        <span class="chip">Foundations of Digital Marketing &amp; E-commerce</span>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- EXPERIENCE — LinkedIn-style rows -->
 <section id="experience">
   <div class="eyebrow">Experience</div>
-  <h2 style="margin-bottom:1rem; font-size:clamp(1.7rem,3vw,2.3rem);">Where I've worked</h2>
+  <h2>Where I've worked</h2>
 
   <div class="exp-list">
     <div class="exp-row">
@@ -229,35 +205,10 @@
   </div>
 </section>
 
-<!-- PROJECTS — intentionally quiet, low visual weight -->
-<section id="projects" class="projects-quiet">
-  <div class="eyebrow">Projects</div>
-  <h2>A couple of things I've built on the side</h2>
-
-  <div class="project-portal">
-    <div class="portal-bar">
-      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-      <span class="url">ghazaiz/projects</span>
-    </div>
-    <div class="portal-body">
-      <div class="proj-line">
-        <span class="name">Catch the Cake Game</span>
-        <span class="desc">Tkinter game in Python — move a basket to catch falling cakes.</span>
-        <a class="link" href="https://github.com/ghazaiz/Catch-the-cake-game" target="_blank" rel="noopener">github ↗</a>
-      </div>
-      <div class="proj-line">
-        <span class="name">Student Record Management System</span>
-        <span class="desc">C++ console app for managing student records with file handling.</span>
-        <a class="link" href="https://github.com/ghazaiz/Student-Record-Management-System-" target="_blank" rel="noopener">github ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- EDUCATION -->
 <section id="education">
   <div class="eyebrow">Education</div>
-  <h2 style="margin-bottom:2.2rem; font-size:clamp(1.7rem,3vw,2.3rem);">Academic background</h2>
+  <h2>Academic background</h2>
   <div class="edu-list">
     <div class="edu-item">
       <div>
@@ -281,13 +232,24 @@
   <div class="eyebrow" style="justify-content:center;">Contact</div>
   <h2>Let's build something.</h2>
   <p>Open to opportunities in software engineering, front-end development, and digital marketing.</p>
-  <div class="contact-links">
+  <div class="contact-card">
+    <div class="contact-card-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    </div>
+    <div class="contact-card-body">
+      <h3>Send a message</h3>
+      <p>Reach me directly by email if you want to talk about a project, internship, or collaboration.</p>
+    </div>
     <a class="btn btn-solid" href="mailto:ghazaiznadeem00@gmail.com">Email Me</a>
-    <a class="btn btn-ghost" href="https://www.linkedin.com/in/ghazaiznadeem-305bb4363" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </section>
 
-<div id="toast">Email copied to clipboard</div>
+<div id="toast" role="status" aria-live="polite">
+  <span class="toast-icon" aria-hidden="true">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m20 6-11 11-5-5"/></svg>
+  </span>
+  <span class="toast-text">Copied to clipboard</span>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
